@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+		<script type="text/javascript">
+  		 VK.init({apiId: 7644315});
+		</script>
+		<!--"Голова" сайта-->
+		<title>Форум</title>
+		<!--Растягиваем под ширину устройства -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+		<!-- "Тело" сайта -->
+		<h1 id="title">Форум</h1>
+		<p><a href="https://0nera.github.io">Главная</a>/<a href="">Форум</a></p>
+		<h3>Темы:</h3>
+		
+		<menu>
+			<li><a href="example.html">  Пример</a></li>
+			<li><a href="урок_французского.html">  урок_французского</a></li>
+		</menu>
+		<h3>Авторизация:</h3>
+		<!-- VK Widget -->
+		<div id="vk_auth"></div>
+		<script type="text/javascript">
+		  VK.Widgets.Auth("vk_auth", {"authUrl":"/Login"});
+		</script>
+		<h3>Связаться со мной:</h3>
+		<form action="mailto:slizen.can@gmail.com" enctype="text/plain">
+			<p><input name="a"><input type="submit"></p>
+		</form>
+	</body>
+	<footer>
+		<!-- "Подвал" сайта -->
+		<button onclick="alert('Текст')">Тест на работу JavaScript</button>
+		<p>© 2020 Елчинян Арен </p>
+	</footer>
+</html>
